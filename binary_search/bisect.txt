@@ -1,0 +1,20 @@
+This file explains the use of bisect_left and bisect_right
+
+Given a target k, if k does not exist in arr[] then bisect_left = bisect_right where
+bisect_left = bisect_right = idx of the element > k
+
+e.g: [1,2,3, 5, 6] and target = 4 then bisect_left = bisect_right = 3 (value = 5)
+            res
+
+E.g: Given array [1,    2,         2,        3,         5] then:
+                    bisect_left         bisect_right
+
+  - bisect_left(2) gives: 1 (idx of the first 2)
+  - bisect_right(2) gives: 3 (idx of the last 2 + 1 or the first element > 2 which is 3)
+
+Applications:
+  (1) Find the closest element to target k (bisect_left only)
+    - 658: Find the closest element to x and do expand window from there.
+
+  (2) Given indices[] in ascending order of an element, and a range [L, R] we can determine # elements [L, R] cover
+    - 3104: Use x = bs_left(L), y = bs_right(R) to compute # chars covered = y-x
