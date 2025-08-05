@@ -1,0 +1,4 @@
+1. If you want to find k smallest elements:
+  => use max_heap of size k.
+2. Vice versa for k largest elements
+3. Used for Dijkstra.
