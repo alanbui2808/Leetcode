@@ -1,1 +1,1 @@
-Contains solutions and explanations of leetcode problems.
+Contains solutions and explanations for leetcode problems.
